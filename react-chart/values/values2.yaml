@@ -1,0 +1,10 @@
+react:
+  name: my-react-app-2
+  replicaCount: 2
+  container:
+    image: sovanseyha/doc_engine_ui:end1
+    port: 80
+  service:
+    type: NodePort
+    port: 3000
+    nodePort: 30021

@@ -1,0 +1,10 @@
+react:
+  name: my-react-app-1
+  replicaCount: 2
+  container:
+    image: sovanseyha/myweb
+    port: 80
+  service:
+    type: NodePort
+    port: 3000
+    nodePort: 30020

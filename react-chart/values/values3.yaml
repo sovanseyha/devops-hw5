@@ -1,0 +1,11 @@
+react:
+  name: my-react-app-3
+  replicaCount: 2
+  container:
+    image: doeunkongden/soccer-date-ui:v2
+    port: 80
+  service:
+    type: NodePort
+    port: 3000
+    nodePort: 30022
+
